@@ -67,7 +67,10 @@
     });
     function selectHash() {
       const index = panels.findIndex(panel => location.hash === "#" + panel.id);
-      if (index >= 0) select(index);
+      if (index >= 0) {
+        panels[index].closest("details.seminar-group")?.setAttribute("open", "");
+        select(index);
+      }
     }
     select(0);
     selectHash();
@@ -75,7 +78,10 @@
     // Opening a panel directly from another part of the page selects its tab first.
     document.querySelectorAll('a[href^="#"]').forEach(link => {
       const index = panels.findIndex(panel => link.hash === "#" + panel.id);
-      if (index >= 0) link.addEventListener("click", () => select(index));
+      if (index >= 0) link.addEventListener("click", () => {
+        panels[index].closest("details.seminar-group")?.setAttribute("open", "");
+        select(index);
+      });
     });
   }
 
@@ -89,7 +95,7 @@
 
   const detail = course.querySelector("details.seminar-group");
   if (detail) {
-    const seminar = expandAsSection(detail, "section");
+    const seminar = detail; // V21: preserve the native collapsed seminar disclosure.
     const items = Array.from(seminar.querySelectorAll(".seminar-item"));
     createTabs(items, [
       ["基本テクニック", "初めに受講"],

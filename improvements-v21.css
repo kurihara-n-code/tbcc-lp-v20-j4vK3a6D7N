@@ -1,0 +1,207 @@
+/* V21: beginner / working-adult hierarchy. Existing tokens, photos and rails remain. */
+.hero .hero-copy{padding:24px 24px 10px;background:var(--paper);text-align:left}
+.hero .hero-invite{transform:none;border:0;background:none;padding:0;margin:0 0 10px;font-size:11px;letter-spacing:.04em}
+.hero h1.hero-main-title{font-family:var(--sans);font-size:clamp(27px,7.6vw,32px);font-weight:700;letter-spacing:-.05em;line-height:1.6;white-space:normal;margin:0;color:var(--brand-navy)}
+.hero h1.hero-main-title:after{display:none}
+.hero-main-title>span{display:block;color:var(--brand-navy)!important;white-space:nowrap}
+.hero-main-title em{font-family:Arial,var(--sans);font-style:normal;color:var(--brand-red);font-weight:700;font-size:1.12em;letter-spacing:-.035em}
+.hero .hero-working{margin-top:14px;border-left:3px solid var(--brand-navy);padding-left:12px}
+.hero-working>p{font-size:17px;color:var(--brand-navy);font-weight:700;margin:0 0 5px}
+.hero-working ul{list-style:none;margin:0;padding:0;font-size:12px;line-height:1.9}
+.hero-working li b{font-weight:600;color:var(--green);margin-right:6px}
+.hero .hero-action{padding:15px 24px 22px;text-align:center}
+.hero-action .button{min-height:56px;padding:14px;font-size:15px}
+.hero .hero-action .text-link{margin-top:12px;font-size:12px}
+.hero .hero-action .hero-consult{margin-right:12px}
+.hero .hero-photo{margin:0 18px;transform:none;border:5px solid var(--white);box-shadow:3px 5px 0 var(--line)}
+.hero .hero-photo img{aspect-ratio:1.55}
+.hero .hero-photo figcaption{font-size:11px;letter-spacing:0;bottom:9px;left:7px}
+.hero-original-copy{padding:24px 24px 3px;text-align:center}
+.hero-original-copy .hero-emotional{font-family:var(--gentle-serif);color:var(--brand-navy);font-size:19px;font-weight:600;margin-bottom:6px}
+.hero-original-copy .hero-title-subcopy{font-size:12px;margin:0 0 8px;line-height:1.8}
+.hero-original-promise{font-size:12px;color:var(--muted);margin:0}
+.hero-original-promise p{margin:0}
+.hero-original-promise br{display:none}
+.hero-original-promise strong{font:inherit}
+.hero>.icon-benefits{padding:20px 20px 30px;margin:0}
+
+/* Ratio leads; the school's history supports it without competing. */
+#about .beginner-note.beginner-highlight{margin-top:0;padding:24px 20px;border-radius:3px;border-top:3px solid var(--brand-navy);grid-template-columns:124px minmax(0,1fr);gap:14px}
+#about .beginner-highlight strong{font-family:Arial,var(--sans);font-size:96px;line-height:1;color:var(--brand-red);letter-spacing:-.055em}
+#about .beginner-highlight>.beginner-kicker{font-size:16px}
+#about .beginner-highlight>div>p{font-size:22px;margin:0;white-space:nowrap}
+#about .beginner-highlight>.beginner-ratio{margin-top:0;padding-top:18px;gap:6px}
+#about .ratio-caption{grid-column:1/-1;font-size:11px;text-align:center;margin-top:-6px;color:var(--muted)}
+#about .beginner-highlight+.fine{font-size:12px;line-height:1.8;margin:12px 0 30px}
+.proof-panels{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:26px 0 32px;padding:22px 0;border-block:1px solid var(--line);text-align:center}
+.proof-panels>div+div{border-left:1px solid var(--line);padding-left:12px}
+#about .proof-panels p{display:flex;align-items:baseline;justify-content:center;gap:5px;margin:0 0 7px;color:var(--brand-navy);line-height:1.2}
+.proof-panels strong{font:700 36px/1.2 Arial,var(--sans);letter-spacing:-.035em;font-variant-numeric:lining-nums tabular-nums}
+.proof-panels p span{font-size:12px;font-weight:600}
+.proof-panels>div>span{font-size:12px;line-height:1.8}
+
+/* Four connected learning elements; not a month-by-month timetable. */
+.learning-flow{margin:26px 0 32px;padding:20px 16px;background:var(--white);border-block:1px solid #c3ccbd}
+main .section .flow-caption{font-size:13px!important;font-weight:600!important;color:var(--brand-navy)!important;line-height:1.6!important;margin:0 0 16px}
+.learning-flow ol{list-style:none;margin:0;padding:0}
+.learning-flow li{position:relative;padding:0 0 20px}
+.learning-flow li:last-child{padding-bottom:0}
+.learning-flow li:not(:last-child):after{content:"";position:absolute;top:34px;bottom:0;left:15px;border-left:1px solid #bac5b4}
+.learning-flow a{display:grid;grid-template-columns:32px 32px minmax(0,1fr);align-items:center;gap:12px;min-height:44px;position:relative}
+.flow-number{display:grid;place-items:center;background:var(--brand-navy);color:white;width:32px;height:32px;font:600 12px Arial,var(--sans);border-radius:50%;z-index:1}
+.learning-flow .guide-icon{width:31px;height:31px;color:var(--brand-navy);margin:0}
+.learning-flow b,.learning-flow small{display:block}
+.learning-flow b{font-size:14px;color:var(--brand-navy);font-weight:600;line-height:1.5}
+.learning-flow small{font-size:11px;line-height:1.6;margin-top:4px}
+#learning .learning-stages>article{margin:0;padding:28px 0 32px;border-top:1px solid #aeb8b0;background:none;border-radius:0;overflow:visible;scroll-margin-top:28px}
+#learning .learning-stages>article:first-child{padding-top:0;border-top:0}
+#learning .learning-stages>article>img{width:100%;height:auto;aspect-ratio:1.45;object-fit:cover;border-radius:3px;box-shadow:4px 5px 0 #cbd9bd;margin:0}
+#learning .learning-stages>article:nth-child(even)>img{box-shadow:4px 5px 0 #e3cfbc}
+#learning .learning-stages .learning-copy{padding:22px 0 0}
+#learning .learning-stages .step-number{display:inline-block;font:700 13px/1.4 Arial,var(--sans);letter-spacing:.08em;background:var(--white);padding:7px 10px;color:var(--brand-red);margin-bottom:12px}
+#learning .learning-stages h3{font-size:20px;margin:4px 0 14px}
+#learning .learning-stages .learning-copy>.eyebrow{font-size:11px;margin:0 0 12px}
+#learning .learning-stages h3.icon-heading>.guide-icon{display:inline-block;width:30px;height:30px;margin:0 8px 5px 0;vertical-align:middle}
+#learning .schedule-note{padding-top:32px;border-top:2px solid #aeb8b0;margin-top:8px}
+.study-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0}
+.study-options>div{border:1px solid #c1c9b7;background:var(--white);padding:16px 10px}
+.study-label{font-size:12px;letter-spacing:.1em;color:var(--green);font-weight:700;border-bottom:1px solid var(--line);display:block;padding-bottom:6px;margin-bottom:9px}
+main .section .study-options p{font-size:14px;line-height:1.8;margin:0;color:var(--brand-navy)}
+.time-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:14px 0 20px}
+.time-options>div{display:flex;align-items:center;flex-direction:column;gap:8px;border-block:1px solid #b9c3b0;padding:14px 4px;color:var(--brand-navy)}
+.time-options .guide-icon{width:30px;height:30px;margin:0}
+.time-options b{font-size:15px;letter-spacing:.1em;font-weight:600}
+
+/* Paths are compact photo cards; support is a separately headed group. */
+.career-path-cards{display:grid;gap:18px;margin:26px 0 36px}
+#career .career-row{margin:0;padding:0 0 20px;border:1px solid var(--line);background:var(--white);position:relative;overflow:hidden}
+.path-number{display:block;background:var(--paper);padding:9px 16px;font-size:11px;letter-spacing:.08em;color:var(--green);border-bottom:1px solid var(--line)}
+#career .career-row>img{width:100%;height:auto;aspect-ratio:1.8;object-fit:cover;border-radius:0}
+#career .career-row>div{padding:18px 16px 0}
+#career .career-row h3.icon-heading{font-family:var(--sans);font-size:19px;line-height:1.6;margin:0 0 12px;padding:0}
+#career .career-row h3>.guide-icon{width:28px;height:28px}
+main #career .career-row p{padding:0;font-size:15px;line-height:1.9}
+.career-support{border-top:2px solid var(--brand-navy);padding-top:22px}
+.career-support .support-group-title{font-family:var(--sans);font-size:19px;color:var(--brand-navy);margin-bottom:24px}
+.career-support .support-item{margin:22px 0;padding-bottom:24px;border-bottom:1px solid var(--line)}
+
+/* Native scroll region, usable by keyboard and touch. No page overflow. */
+.course-comparison{margin:30px -5px 36px}
+main .section .comparison-kicker{font-size:12px;color:var(--green);margin-bottom:6px;font-weight:600;letter-spacing:.04em}
+.course-comparison h3{font-size:21px;font-family:var(--sans);color:var(--brand-navy)}
+main .section .comparison-hint{font-size:12px;color:var(--muted);margin:12px 0}
+.comparison-scroll{overflow-x:auto;max-width:100%;border:1px solid #bec7b7;scrollbar-width:thin;scrollbar-color:#829176 var(--paper);overscroll-behavior-inline:contain}
+.comparison-scroll table{width:800px;border-collapse:separate;border-spacing:0;table-layout:fixed;font-size:14px;line-height:1.8;background:var(--white)}
+.comparison-scroll th,.comparison-scroll td{padding:16px 14px;vertical-align:top;border-right:1px solid var(--line);border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.comparison-scroll tr>:first-child{position:sticky;left:0;width:112px;z-index:1;background:var(--paper);font-weight:600;color:var(--brand-navy);font-size:12px}
+.comparison-scroll thead th{width:229px;background:var(--brand-navy);color:white;font-weight:600;font-size:15px}
+.comparison-scroll thead th:first-child{background:var(--brand-navy);color:white;z-index:2;width:112px}
+.compare-course-name{display:block;margin-bottom:12px;min-height:54px}
+.comparison-scroll thead a{display:inline-block;font-size:12px;border-bottom:1px solid #b2bbce;padding:8px 0;color:white;line-height:1.6}
+.comparison-scroll tbody tr:nth-child(7) td{font-weight:700;color:var(--brand-navy);font-size:18px;font-variant-numeric:tabular-nums}
+.comparison-scroll tbody tr:nth-child(8) td{background:#f6f0e8;font-weight:600}
+main .section .comparison-note{font-size:12px;line-height:1.85;color:var(--muted);margin:12px 0 0}
+
+/* Experienced practitioners have a separate, initially collapsed menu. */
+#course details.seminar-group{margin-top:36px;border-top:2px solid #a5b39a;background:var(--sage);border-radius:0}
+.seminar-group>summary .eyebrow{display:inline-block;padding:4px 7px;border:1px solid #abb89e;letter-spacing:.03em;font-size:11px;margin-bottom:10px}
+.seminar-group>summary h3{font-family:var(--sans);font-size:20px;line-height:1.6}
+.seminar-group>.details-body{padding-top:4px}
+.seminar-flow{margin:12px 0 26px}
+.seminar-flow-basic,.seminar-flow-special{padding:18px 14px;border:1px solid #bcc6b1;background:var(--white)}
+.seminar-flow-basic>span,.seminar-flow-basic>b,.seminar-flow-basic>strong,.seminar-flow-basic>small{display:block}
+.seminar-flow-basic>span{font-size:11px;color:var(--green);margin-bottom:8px}
+.seminar-flow-basic>b,.seminar-flow-special>b{font-size:14px;line-height:1.8;color:var(--brand-navy)}
+.seminar-flow-basic>strong{font:700 24px/1.5 Arial,var(--sans);color:var(--brand-navy);margin-top:10px}
+main .section .seminar-flow-arrow{font:400 22px/1 Arial,var(--sans);margin:10px 0;text-align:center;color:var(--green)}
+.seminar-flow-special ul{list-style:none;padding:0;margin:10px 0 0}
+.seminar-flow-special a{display:block;font-size:13px;line-height:1.8;min-height:44px;padding:9px 0;border-top:1px solid var(--line);text-decoration:underline;text-underline-offset:3px}
+.seminar-group .button{background:transparent;color:var(--green);box-shadow:none;border:1px solid #9fae94;border-radius:4px;min-height:52px}
+.seminar-group .button-arrow{background:transparent;color:var(--green)}
+.seminar-group .button:hover{background:var(--white)}
+
+/* Input behaviour / required fields unchanged. Only touch, focus and spacing. */
+#request-form>label{margin:24px 0}
+#request-form input:not([type=radio]):not([type=checkbox]),#request-form select{min-height:52px;border-radius:3px;border-color:#a6afa0;padding:14px 12px}
+#request-form textarea{min-height:150px;border-radius:3px;border-color:#a6afa0}
+#request-form input::placeholder,#request-form textarea::placeholder{font-size:13px;color:#727970}
+#request-form .postal-address-button{min-height:52px;min-width:86px;font-size:13px}
+#request-form label>span>b,#request-form legend b{background:#f0dfd7;color:#873d2e;font-size:11px;padding:3px 6px}
+#request-form label:has(>input[name=building])>span{position:static;width:auto;height:auto;clip-path:none;overflow:visible;font-size:14px}
+#request-form label:has(>input[name=building])>span:after,#request-form label:has(>select[name=age])>span:after,#request-form label:has(>textarea)>span:after,#request-form label:has(>select[name=experience-schedule])>span:after,#request-form .consideration-status>legend:after{content:"任意";display:inline-block;font-size:11px;font-weight:400;line-height:1.7;margin-left:8px;padding:1px 6px;background:#ebece6;color:#596257;border-radius:2px}
+#request-form .request-purpose-option{min-height:58px;padding:15px 12px}
+#request-form .consideration-list label{min-height:44px;padding:6px 0;gap:9px;align-items:flex-start}
+#request-form .consideration-list input{width:18px;height:18px;flex-shrink:0}
+#request-form input:focus-visible,#request-form textarea:focus-visible,#request-form select:focus-visible{outline:2px solid var(--brand-navy);outline-offset:3px}
+#request-form .form-status.error{border-left:3px solid #943b2c;padding-left:12px}
+
+@media(min-width:1000px){
+  .learning-flow{padding:18px 8px}
+  .learning-flow ol{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+  .learning-flow li{padding:0}
+  .learning-flow a{grid-template-columns:1fr;justify-items:center;text-align:center;gap:9px}
+  .learning-flow li:not(:last-child):after{left:calc(50% + 17px);right:calc(-50% + 17px);top:16px;bottom:auto;border:0;border-top:1px solid #bac5b4}
+  .learning-flow b{font-size:12px}
+  .learning-flow small{font-size:10px}
+}
+@media(max-width:374px){
+  .hero .hero-copy{padding:20px 20px 10px}
+  .hero h1.hero-main-title{font-size:27px}
+  .hero-working>p{font-size:16px}
+  .hero .hero-action{padding:14px 20px 20px}
+  .hero .hero-action .text-link{font-size:11px}
+  .hero .hero-action .hero-consult{margin-right:8px}
+  #about .beginner-note.beginner-highlight{grid-template-columns:112px minmax(0,1fr);padding:22px 16px;gap:12px}
+  #about .beginner-highlight strong{font-size:86px}
+  .proof-panels strong{font-size:32px}
+  .study-options>div{padding:14px 9px}
+}
+@media(prefers-reduced-motion:reduce){.hero .button{transition:none}}
+@media print{.comparison-scroll{overflow:visible}.comparison-scroll table{width:100%;font-size:10px}.comparison-scroll th,.comparison-scroll td{padding:6px}.learning-flow a{color:inherit}}
+
+@media(max-width:999px){.learning-flow small br{display:none}}
+
+/* Keep diagram captions distinct from the larger original body copy. */
+#learning .study-options p{font-size:14px;line-height:1.8;margin:0;color:var(--brand-navy)}
+#course .course-comparison .comparison-kicker{font-size:12px;line-height:1.8;color:var(--green);font-weight:600;margin-bottom:6px}
+#course .course-comparison .comparison-hint{font-size:12px;line-height:1.8;color:var(--muted);margin:12px 0}
+#course .course-comparison .comparison-note{font-size:12px;line-height:1.85;color:var(--muted);margin:12px 0 0}
+
+@media(max-width:374px){#learning .schedule-note h3{font-size:19px}#learning .schedule-note h3>.guide-icon{width:25px;height:25px;margin-right:7px}}
+
+#learning .learning-flow small{font-size:12px;line-height:1.6}.learning-flow a>span:last-child{width:100%;min-width:0}
+
+/* 2026-10-14: reference-style brush lettering; hero CTA removed on request. */
+.hero .hero-copy{background:radial-gradient(ellipse at 100% 0,#f6e5d4,transparent 62%),var(--paper);padding-bottom:24px}
+.hero .hero-invite{display:table;margin:0 auto 14px;padding:5px 10px;background:var(--white);border-bottom:2px solid #bdc8de;transform:rotate(-2deg);font-size:11px}
+.hero h1.hero-brush-title{margin:0 -5px 16px;line-height:0;white-space:normal}
+.hero-brush-title img{display:block;width:100%;height:auto}
+.hero h1.hero-brush-title:after{display:none}
+.hero .hero-working{margin-top:16px}
+.hero .hero-photo{margin-top:0}
+@media(max-width:374px){.hero .hero-invite{font-size:10px;padding-inline:8px}}
+
+/* Designed image ribbon: 整体を学ぶという選択 */
+.hero .hero-invite{display:block;width:100%;height:auto;aspect-ratio:4.5;margin:0 auto 8px;padding:0;background:none;border:0;transform:none;line-height:0;overflow:hidden}
+.hero .hero-invite img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+
+/* Gentle title artwork includes a quiet small introductory line. */
+.hero h1.hero-gentle-title{margin:0 -3px 16px;line-height:0}
+.hero-gentle-title img{display:block;width:100%;height:auto}
+
+/* User-supplied proof artwork, integrated with existing section spacing. */
+#about .school-proof-reference{margin:26px 0 32px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.school-proof-reference img{display:block;width:100%;height:auto;mix-blend-mode:multiply}
+
+/* Make the experienced-practitioner menu easier to notice, without competing with the main courses. */
+#course details.seminar-group{border:1px solid #bbc7b3;border-top:3px solid var(--brand-navy);background:#eaf0e3}
+#course .seminar-group>summary{padding:24px 52px 25px 20px}
+#course .seminar-group>summary .eyebrow{background:var(--brand-navy);border-color:var(--brand-navy);color:#fff;padding:5px 9px;font-size:11px;letter-spacing:.04em;margin-bottom:12px}
+#course .seminar-group>summary h3{color:var(--brand-navy);font-size:22px;font-weight:700;line-height:1.65}
+#course .seminar-group>summary:after{display:grid;place-items:center;right:14px;width:30px;height:30px;border-radius:50%;background:var(--brand-navy);color:#fff;font-size:23px;line-height:1}
+#course .seminar-group>summary .detail-cue{margin-top:15px;font-size:12px;color:var(--brand-navy);border-bottom-color:#8c9ab8}
+#course .seminar-group>summary:hover{background:#e4ecdc}
+@media(max-width:374px){#course .seminar-group>summary{padding-left:16px;padding-right:48px}#course .seminar-group>summary h3{font-size:20px}}
+
+/* Slight photo-print tilt, matching the supplied reference. */
+.hero .hero-photo{transform:rotate(-1.8deg);transform-origin:center;margin-top:4px;margin-bottom:10px}

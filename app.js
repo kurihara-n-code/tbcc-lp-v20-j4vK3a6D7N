@@ -85,7 +85,7 @@
     toc.forEach(link=>{const section=document.querySelector(link.hash);if(section && section.getBoundingClientRect().top <= innerHeight*.32) current=link;});
     toc.forEach(link=>{const active=link===current;link.classList.toggle("active",active);if(active)link.setAttribute("aria-current","location");else link.removeAttribute("aria-current");});
     const contact=document.getElementById("contact").getBoundingClientRect();
-    const heroButton=document.querySelector(".hero-action .button").getBoundingClientRect(); document.querySelector(".mobile-fixed").classList.toggle("at-form",(contact.top<innerHeight*.75&&contact.bottom>70)||(heroButton.top>=0&&heroButton.bottom<innerHeight));
+    const heroButton=document.querySelector(".hero-action .button")?.getBoundingClientRect(); document.querySelector(".mobile-fixed").classList.toggle("at-form",(contact.top<innerHeight*.75&&contact.bottom>70)||(!!heroButton&&heroButton.top>=0&&heroButton.bottom<innerHeight));
     ticking=false;
   }
   addEventListener("scroll",()=>{if(!ticking){requestAnimationFrame(updateToc);ticking=true;}},{passive:true});

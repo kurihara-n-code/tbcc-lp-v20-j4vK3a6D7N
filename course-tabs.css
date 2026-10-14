@@ -1,0 +1,33 @@
+.selection-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin:26px 0 0}
+.selection-tabs>button{min-width:0;padding:14px 5px;border:1px solid var(--line);border-bottom:3px solid var(--line);border-radius:4px 4px 0 0;background:var(--paper);color:var(--brand-navy,#1e2c5c);font-size:12px;font-weight:700;line-height:1.6;text-align:center;cursor:pointer}
+.selection-tabs>button>span,.selection-tabs>button>small{display:block}
+.selection-tabs>button>small{font-size:10px;color:inherit;margin-top:5px;line-height:1.6}
+.selection-tabs>button[aria-selected="true"]{background:var(--brand-navy,#1e2c5c);color:#fff;border-color:var(--brand-navy,#1e2c5c);border-bottom-color:var(--brand-red,#e61f19)}
+.selection-tabs>button:hover{border-color:var(--brand-navy,#1e2c5c)}
+article.course-detail{margin-top:0;border-radius:0 0 5px 5px}
+.course-panel-header{padding:20px 18px}
+.course-panel-header .course-image{display:block;width:100%;margin:0 0 20px;aspect-ratio:1.45;object-fit:cover}
+.course-panel-header h3.icon-heading{font-size:20px;line-height:1.6;color:var(--brand-navy,#1e2c5c)}
+.course-panel-header h3.icon-heading>.guide-icon{width:27px;height:27px;margin-right:7px}
+.course-panel-header .photo-course-label{display:inline-block;margin-bottom:9px}
+section.seminar-group>.course-panel-header{padding:25px 18px 18px}
+.seminar-photo{margin:0 0 24px}
+.seminar-photo img{display:block;width:100%;height:auto;aspect-ratio:1.5;object-fit:cover;border-radius:4px}
+.seminar-photo figcaption{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.7}
+.seminar-selection-tabs{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-top:26px}
+.seminar-selection-tabs>button{border-radius:3px;padding:12px 7px}
+.seminar-selection-tabs>button:first-child{grid-column:1/-1}
+.seminar-selection-tabs>button>small{font-size:11px;margin-top:0;font-weight:inherit}
+.seminar-group .seminar-item[role="tabpanel"]{margin:0 0 28px;padding-top:24px;border-top:0}
+@media(max-width:359px){.selection-tabs>button{font-size:11px;padding:12px 3px}.selection-tabs>button>small{font-size:9px}.seminar-selection-tabs>button{font-size:12px}.seminar-selection-tabs>button>small{font-size:10px}.course-panel-header{padding:17px 14px}.course-panel-header h3.icon-heading{font-size:18px}}
+@media print{.selection-tabs{display:none}[role="tabpanel"][hidden]{display:block!important}}
+
+/* Course and seminar facts: collapsed until requested. */
+.facts-disclosure{margin:20px 0 24px}
+.facts-disclosure>summary{font-size:14px;color:var(--brand-navy,#1e2c5c);font-weight:600;padding-top:18px;padding-bottom:18px}
+.facts-disclosure>div{padding-bottom:20px}
+.facts-disclosure .course-facts{margin:0}
+.set-fees-disclosure .set-prices{margin-bottom:0}
+
+/* Show the practitioner's face and working hands in the introductory course photo. */
+#panel-casual .course-panel-header .course-image{aspect-ratio:1.08;object-position:center 15%}

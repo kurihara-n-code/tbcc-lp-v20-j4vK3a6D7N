@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tb-cc.jp/lp/sitemap.xml

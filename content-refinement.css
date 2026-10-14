@@ -1,0 +1,25 @@
+/* V20: compact introductions with native keyboard-accessible disclosures. */
+.story-details { margin: 12px 0 18px; }
+.story-details > summary { color: var(--brand-navy, #1e2c5c); font-size: 14px; }
+.story-details .story-open { display: none; }
+.story-details[open] .story-closed { display: none; }
+.story-details[open] .story-open { display: inline; }
+.story-details > div { padding-top: 8px; }
+.story-details > div > p:last-child { margin-bottom: 0; }
+.teacher .story-details { border-bottom: 1px solid var(--line); }
+.teacher .story-details > div { padding-bottom: 20px; }
+.voice .story-details { border-bottom: 0; margin-bottom: 0; }
+@media print {
+  .story-details > summary { display: none; }
+  .story-details > div { display: block !important; }
+}
+.hero-promise>p.beginner-bubble{writing-mode:horizontal-tb;flex:0 0 68px;width:68px;line-height:1;letter-spacing:0}.beginner-bubble img{display:block;width:100%;height:auto}@media(max-width:359px){.hero-promise>p.beginner-bubble{flex-basis:57px;width:57px}.hero-promise{gap:8px}}
+
+.about-proof-art{margin:28px 0 12px}.about-proof-art img{display:block;width:100%;height:auto}
+
+/* Separate each learning step from the next photograph. */
+#learning .learning-item+.learning-item{border-top:1px solid #aeb8b0;padding-top:32px;margin-top:32px}
+
+/* Phone number: aligned lining digits and a balanced icon. */
+.access a.phone-link{display:inline-flex;align-items:center;gap:9px;font-family:Arial,"Helvetica Neue",sans-serif;font-size:clamp(24px,6.8vw,28px);font-weight:600;font-variant-numeric:lining-nums tabular-nums;letter-spacing:.025em;line-height:1.35;white-space:nowrap}
+.access a.phone-link>.guide-icon{flex:0 0 24px;width:24px;height:24px;margin:0;vertical-align:middle}
